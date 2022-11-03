@@ -1,0 +1,116 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background-image: url("rowing_race.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: center;
+}
+
+.container{
+    background-color: #ffffff50;
+    width: 40%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 20px 0;
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+
+.timerDisplay{
+    position: relative;
+    width: 92%;
+    background: #ffffffc8;
+    left: 4%;
+    padding: 40px 0;
+    font-family: 'Roboto mono',monospace;
+    color: #005881;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 70px;
+    box-shadow: 0 0 20px rgba(0,139,253,0.25);
+}
+
+.buttons{
+    width: 90%;
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,139,253,0.25);
+}
+
+.buttons button{
+    width: 120px;
+    height: 45px;
+    background-color: #c0b828;
+    color: #ffffff;
+    border: none;
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px;
+    border-radius: 10%;
+    cursor: pointer;
+    outline: 1px solid lightgray;
+
+}
+
+.buttons button:nth-last-child(3){
+  background-color: #c0b828ba;
+  border-radius: 10%;
+  outline: 1px solid lightgray;
+  transition: .95s;
+}
+
+.buttons button:nth-last-child(2){
+  background-color: #47987cc2;
+  border-radius: 10%;
+  outline: 1px solid lightgray;
+  transition: .95s;
+}
+
+.buttons button:nth-last-child(1){
+  background-color: #0073d89c;
+  border-radius: 10%;
+  outline: 1px solid lightgray;
+  transition: ease-in-out, 1s; 
+}
+
+.buttons button:hover:nth-last-child(3){
+  transform: scale(1.15);
+  border-radius: 60%;
+  background-color: #dcd102;
+  outline: 2px solid whitesmoke;
+  box-shadow: 0 0 15px #dcd102;
+  transition-duration: 1s;
+}
+.buttons button:hover:nth-last-child(2){
+  transform: scale(1.15);
+  border-radius: 80%;
+  background-color: #00724a;
+  outline: 2px solid whitesmoke;
+  box-shadow: 0 0 15px #0c865b;
+  
+  transition-duration: 1s;
+}
+.buttons button:hover:nth-last-child(1){
+  transform: scale(1.15);
+  border-radius: 80%;
+  background-color: #0073d8;
+  outline: 2px solid whitesmoke;
+  box-shadow: 0 0 15px #0073d8;
+  
+  transition-duration: 1s;
+  
+}
